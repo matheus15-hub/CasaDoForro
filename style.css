@@ -4,12 +4,12 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 header{
-    height: 15vh;
-    border-bottom: solid 1px yellow ;
+    border-bottom: solid 2px rgb(0, 0, 0) ;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.433);
 }
 .chamaWha{
-    height: 4vh;
-    width: 100vw;
+    padding: 10px;
+    width: 100%;
     background-color: black;
     display: flex;
     justify-content: center;
@@ -22,17 +22,20 @@ header{
 }
 .chamaWha a:hover{
     transform: scale(1.1);
-    
 }
 nav{
+    margin-top:0 ;
+    padding-top: 0;
     text-transform: uppercase;
     display: flex;
     align-items: center;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 .logo{
-    width: 200px;
-    height: 18vh;
+    width: min(50%, 150px);
+
+
 }
 .listalink{
     list-style: none;
@@ -55,4 +58,7 @@ a{
 }
 .listalink a:hover{
     transform: scale(1.2);
+}
+main{
+
 }
