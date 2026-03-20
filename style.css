@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    height: 15vh;
+    border-bottom: solid 1px yellow ;
+}
+.chamaWha{
+    height: 4vh;
+    width: 100vw;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FECB04;
+    gap: 5px;
+}
+.chamaWha a{
+    color: #FECB04
+}
+.chamaWha a:hover{
+    transform: scale(1.1);
+    
+}
+nav{
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.logo{
+    width: 200px;
+    height: 18vh;
+}
+.listalink{
+    list-style: none;
+    display: flex;
+
+}
+.listalink li{
+    letter-spacing: 1px;
+    margin-left: 40px;
+}
+.listalink a{
+    
+    font-weight: bold;
+}
+a{
+    text-decoration: none;
+    display: block;
+    color: black;
+    transition: 0.5s;
+}
+.listalink a:hover{
+    transform: scale(1.2);
+}
