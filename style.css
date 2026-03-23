@@ -1,121 +1,141 @@
-*{
-    margin: 0;
-    padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
-}
-body{
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column
-}
-header{
-    border-bottom: solid 2px rgb(0, 0, 0) ;
-    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.433);
-}
-.chamaWha{
-    padding: 10px;
-    width: 100%;
-    background-color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #FECB04;
-    gap: 5px;
-}
-.chamaWha a{
-    color: #FECB04
-}
-.chamaWha a:hover{
-    transform: scale(1.1);
-}
-nav{
-    margin-top:0 ;
-    padding-top: 0;
-    text-transform: uppercase;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-.logo{
-    width: min(50%, 150px);
+    *{
+        margin: 0;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    :root{
+        --cor-principal: #FECB04;
+    }
+    body{
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column
+    }
+    header{
+        animation: bordaColor 3s ease-in-out infinite alternate;
+    }
+    .chamaWha{
+        padding: 10px;
+        width: 100%;
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #FECB04;
+        gap: 5px;
+    }
+    .chamaWha a{
+        color: #FECB04
+    }
+    .chamaWha a:hover{
+        transform: scale(1.1);
+    }
+    nav{
+        margin-top:0 ;
+        padding-top: 0;
+        text-transform: uppercase;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .logo{
+        width: min(50%, 150px);
 
 
-}
-.listalink{
-    list-style: none;
-    display: flex;
+    }
+    .listalink{
+        list-style: none;
+        display: flex;
 
-}
-.listalink li{
-    letter-spacing: 1px;
-    margin-left: 40px;
-}
-.listalink a{
-    
-    font-weight: bold;
-}
-a{
-    text-decoration: none;
-    display: block;
-    color: black;
-    transition: 0.5s;
-}
-.listalink a:hover{
-    transform: scale(1.2);
-}
-h1{
-    padding: 20px 0;
-    text-align: center;
-}
-main{
-    flex: 1;
-}
-#produtos{
-    padding: 20px;
-    display: grid;
-    grid-template-columns: repeat( auto-fit, minmax(150px , 1fr) );
-    justify-items: center;
-    gap: 20px;
-}
-#produtos div{
-    transition: 0.3s;
-}
-#produtos img{
-    width: 100%;
-    max-width: 200px;
-    height: auto;
-    object-fit: cover;
-    border-radius: 50%;
-}
-#produtos p{
-    font-size: 1.2em;
-    font-weight: bold;
-    text-align: center;
-}
-#produtos div:hover{
-    transform: scale(1.1);
-    color:#FECB04;
-}
+    }
+    .listalink li{
+        letter-spacing: 1px;
+        margin-left: 40px;
+    }
+    .listalink a{
+        
+        font-weight: bold;
+    }
+    a{
+        text-decoration: none;
+        display: block;
+        color: black;
+        transition: 0.5s;
+    }
+    .listalink a:hover{
+        transform: scale(1.2);
+    }
+    h1{
+        padding: 20px 0;
+        text-align: center;
+    }
+    main{
+        flex: 1;
+    }
+    #produtos{
+        padding: 20px;
+        display: grid;
+        grid-template-columns: repeat( auto-fit, minmax(150px , 1fr) );
+        justify-items: center;
+        gap: 20px;
+    }
+    #produtos div{
+        transition: 0.3s;
+    }
+    #produtos img{
+        width: 100%;
+        max-width: 200px;
+        height: auto;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+    #produtos p{
+        font-size: 1.2em;
+        font-weight: bold;
+        text-align: center;
+    }
+    #produtos div:hover{
+        transform: scale(1.1);
+        color:#FECB04;
+    }
 
-#produtos div:hover img{
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
-}
-footer{
-    width: 100vw;
-    color: #FECB04;
-    padding: 20px;
-    background-color: black;
-    box-shadow: 0 10px 10px #FECB04;
-    background-image: linear-gradient(to bottom , black 80%, #FECB04)
-    
+    #produtos div:hover img{
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    }
+    footer{
+        width: 100vw;
+        color: #FECB04;
+        padding: 50px;
+        background-color: black;
+        box-shadow: 0 10px 10px #FECB04;
+        background-image: linear-gradient(to bottom , black 80%, #FECB04)
+        
 
-}
-footer h3{
-    padding: 10px;
-    text-align: center;
-}
-footer p{
-    text-align: center;
-    line-height: 1.5em;
+    }
+    footer h3{
+        padding: 10px;
+        text-align: center;
+    }
+    footer p{
+        text-align: center;
+        line-height: 1.5em;
+    }
+
+
+
+
+    @keyframes bordaColor{
+    0% {
+        border-bottom: 2px solid black;
+        box-shadow: 0 3px 8px rgba(0, 0, 0, 0.4);
+    }
+    50%{
+        border-bottom: 2px solid #ffdd55;
+        box-shadow: 0 3px 14px rgba(254, 203, 4, 0.4);
+    }
+    100%{
+        border-bottom: 2px solid var(--cor-principal);
+        box-shadow: 0 3px 18px rgba(254, 203, 4, 0.6);
+    }
 }
