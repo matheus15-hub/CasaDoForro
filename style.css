@@ -59,6 +59,39 @@ a{
 .listalink a:hover{
     transform: scale(1.2);
 }
+h1{
+    padding: 20px 0;
+    text-align: center;
+}
 main{
 
+}
+#produtos{
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(150px , 1fr) );
+    justify-items: center;
+    gap: 20px;
+}
+#produtos div{
+    transition: 0.3s;
+}
+#produtos img{
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 50%;
+}
+#produtos p{
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center;
+}
+#produtos div:hover{
+    transform: scale(1.1);
+    color:#FECB04;
+}
+
+#produtos div:hover img{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
 }
