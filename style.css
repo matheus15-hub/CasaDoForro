@@ -90,6 +90,13 @@
         object-fit: cover;
         border-radius: 50%;
     }
+    img{
+        width: 100%;
+        max-width: 200px;
+        height: auto;
+        object-fit: cover;
+        border-radius: 50%;
+    }
     #produtos p{
         font-size: 1.2em;
         font-weight: bold;
@@ -120,6 +127,25 @@
     footer p{
         text-align: center;
         line-height: 1.5em;
+    }
+
+    .esquerda{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        justify-content: center;
+        align-items: center;
+        text-align: left;
+        padding: 10%;
+        max-width: 90%;
+    }
+    .direita{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        justify-content: center;
+        align-items: center;
+        text-align: right;
+        padding: 10%;
+        max-width: 90%;
     }
 
 
