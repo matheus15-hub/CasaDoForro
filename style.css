@@ -20,7 +20,7 @@
        
     }
     .chamaWha{
-        padding: 10px;
+        padding: 10px 0;
         width: 100%;
         background-color: black;
         display: flex;
@@ -56,11 +56,11 @@
         list-style: none;
         display: flex;
         flex-wrap: wrap;
+        gap: 30px;
 
     }
     .listalink li{
         letter-spacing: 1px;
-        margin-left: 40px;
     }
     .listalink a{
         font-size: 0.9em;

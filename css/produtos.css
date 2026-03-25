@@ -38,7 +38,7 @@ main{
     display: grid;
     grid-template-columns: repeat(auto-fit ,minmax(50px , 180px) ) ;
     justify-content: center;
-    padding: 50px 0;
+    padding: 50px 0 100px;
     gap: 30px;
 }
 .container_produto div{
@@ -48,7 +48,18 @@ main{
     text-align: center;
     transition: 0.5s;
 }
+.container_produto p{
+    line-height: 1.5em;
+}
 .container_produto div:hover{
     transform: scale(1.2);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.394);
+}
+span img{
+    width: 25px;
+    border-radius: 0;
+    padding-left: 10px;
+}
+footer h3{
+    color:#FECB04;
 }
