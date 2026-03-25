@@ -138,9 +138,9 @@
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
     }
     footer{
-        width: 91vw ;
+        width: 100vw ;
         color: #FECB04;
-        padding: 50px;
+        padding: 50px 0;
         background-color: black;
         box-shadow: 0 10px 10px #FECB04;
         background-image: linear-gradient(to bottom , black 80%, #FECB04)
@@ -148,7 +148,7 @@
 
     }
     footer h3{
-        padding: 10px;
+        padding: 10px 0px;
         text-align: center;
     }
     footer p{
@@ -156,15 +156,21 @@
         line-height: 1.5em;
     }
     .IconeFixo{
-        position: fixed;
-        right: 2%;
-        bottom: 3%;
-        max-width: 15%;
-        max-height: 15%;
-        background-color: #b3b3b3;
-        object-fit: cover;
-        border-radius: 70%;
+    position: fixed;
+    right: 3%;
+    bottom: 4%;
+    max-width: 15%;
+    max-height: 15%;
+    object-fit: cover;
+    display: block; 
+      border-radius: 50% ;
+      transition: 0.3s ease-out;
+}
+    .IconeFixo:hover{
+        transform: scale(1.1);
+        filter: drop-shadow(0 0 10px rgba(0,0,0,0.6));
     }
+    
     .topo{ 
         color: #ffffff;
         text-shadow: 1px 1px 5px rgb(0, 0, 0);

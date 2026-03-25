@@ -48,6 +48,9 @@ main{
     text-align: center;
     transition: 0.5s;
 }
+.container_produto img{
+    width: 100%;
+}
 .container_produto p{
     line-height: 1.5em;
 }
