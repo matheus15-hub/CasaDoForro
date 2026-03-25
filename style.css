@@ -163,7 +163,7 @@
         align-items: center;
         text-align: left;
         padding: 4%;
-        max-width: 80%;
+        max-width: 100%;
     }
     .texto{
         display: grid;
@@ -193,6 +193,47 @@
         align-items: center;
         background-image: url("img/Acordo.png");
         background-size: cover;
+    }
+    .login-container, .perfil-container {
+        max-width: 400px;
+        margin: 60px auto;
+        background: rgb(255, 248, 248);
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 2px 2px  rgba(0,0,0,0.2);
+        }
+    .input-group {
+        margin-bottom: 6%;
+    }
+
+    .input-group label {
+        display: block;
+        margin-bottom: 1%;
+    }
+
+    .input-group input {
+        width: 100%;
+        padding: 2%;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        outline: none;
+    }
+
+    .input-group input:focus {
+        border-color: var(--cor-principal);
+    }
+    .btn {
+        width: 100%;
+        padding: 10px;
+        background: var(--cor-principal);
+        border: none;
+        cursor: pointer;
+        font-weight: bold;
+        transition: 0.5s;
+    }
+
+    .btn:hover {
+        transform: scale(1.15);
     }
 
 
