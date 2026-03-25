@@ -75,6 +75,24 @@
     .listalink a:hover{
         transform: scale(1.2);
     }
+    .hamburger{
+        display: none;
+        border: none;
+        background: none;
+        border-top: 4px solid #000000 ;
+        cursor: pointer;
+    }
+    .hamburger::before,
+    .hamburger::after{
+        content: " ";
+        display: block;
+        width: 30px;
+        height: 4px;
+        margin-top: 5px;
+        background: #000000;
+        position: relative;
+        transition: 0.3s
+    }
     h1{
         padding: 20px 0;
         text-align: center;
@@ -180,5 +198,48 @@
     100%{
         border-bottom: 2px solid var(--cor-principal);
         box-shadow: 0 3px 18px rgba(254, 203, 4, 0.6);
+    }
+}
+@media (max-width:750px) {
+    .hamburger{
+        display: block; 
+        z-index: 1;
+    }
+    .listalink a{
+        font-size: 1.2em; 
+    }
+    .listalink{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: #FECB04; 
+        clip-path: circle(100px at 90% -15%);
+        transition: 1s ease-out;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        gap: 0px;
+        pointer-events: none;
+        margin: 0;
+        padding: 0;
+    }
+    nav.active .listalink{
+        clip-path: circle(1500px at 90% -15%);
+        pointer-events: all;
+    }
+    nav.active .hamburger{ 
+        position: fixed;
+        top: 26px;
+        right: 16px;
+        border-top-color: transparent;
+    }
+    nav.active .hamburger::before{
+        transform: rotate(135deg);
+    }
+    nav.active .hamburger::after{
+        transform: rotate(-135deg);
+        top: -7px;
     }
 }
