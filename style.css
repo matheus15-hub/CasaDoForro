@@ -156,22 +156,22 @@
         line-height: 1.5em;
     }
 
-    .esquerda{
+    .historia{
         display: grid;
         grid-template-columns: 2fr 1fr;
         justify-content: center;
         align-items: center;
         text-align: left;
         padding: 4%;
-        max-width: 90%;
+        max-width: 80%;
     }
-    .direita{
+    .texto{
         display: grid;
-        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 1fr;
         justify-content: center;
         align-items: center;
-        text-align: right;
-        padding: 4%;
+        text-align: left;
+        padding: 5%;
         max-width: 90%;
     }
     .IconeFixo{
