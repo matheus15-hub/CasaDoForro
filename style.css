@@ -155,25 +155,6 @@
         text-align: center;
         line-height: 1.5em;
     }
-
-    .historia{
-        display: grid;
-        grid-template-columns: 2fr 1fr;
-        justify-content: center;
-        align-items: center;
-        text-align: left;
-        padding: 4%;
-        max-width: 100%;
-    }
-    .texto{
-        display: grid;
-        grid-template-rows: 1fr;
-        justify-content: center;
-        align-items: center;
-        text-align: left;
-        padding: 5%;
-        max-width: 90%;
-    }
     .IconeFixo{
         position: fixed;
         right: 2%;
@@ -193,6 +174,28 @@
         align-items: center;
         background-image: url("img/Acordo.png");
         background-size: cover;
+    }
+    .esquerda{
+        display: grid;
+        grid-template-columns: 60% 10%;
+        justify-content: center;
+        align-items: center;
+        text-align: left;
+        padding: 1%;
+        width: 70%;
+    }
+    .direita{
+        display: grid;
+        grid-template-columns:50% 40%;
+        justify-content: center;
+        align-items: center;
+        text-align: right;
+        padding: 1%;
+        max-width: 90%;
+    }
+    .imghis{
+        width: 300px;
+        height: 180px;
     }
     .login-container, .perfil-container {
         max-width: 400px;
