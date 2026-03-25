@@ -1,0 +1,32 @@
+main{
+    padding: 50px 0;
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "imagemProduto infoForro";
+}
+.imagemProduto{
+    grid-area: "imagemProduto";
+}
+.infoForro{
+    grid-area: "infoForro";
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: flex-start
+}
+.infoForro p{
+    line-height: 2em;
+    font-size: 1.1em;
+    color: rgba(0, 0, 0, 0.717);
+}
+button{
+    margin-top: 20px;
+    font-size: 1.3em;
+    padding: 8px 0;
+    background-color: #fff;
+    border-radius: 10px;
+    border: solid 1px rgba(0, 0, 0, 0.36);
+}
