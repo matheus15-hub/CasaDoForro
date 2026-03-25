@@ -13,6 +13,11 @@
     }
     header{
         animation: bordaColor 3s ease-in-out infinite alternate;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        background-color: #fff;
+       
     }
     .chamaWha{
         padding: 10px;
@@ -38,15 +43,19 @@
         align-items: center;
         justify-content: space-around;
         flex-wrap: wrap;
+        width: 100%;
+        
     }
     .logo{
-        width: min(50%, 150px);
+        width: min(50%, 120px);
+        border-radius: 0;
 
 
     }
     .listalink{
         list-style: none;
         display: flex;
+        flex-wrap: wrap;
 
     }
     .listalink li{
@@ -54,8 +63,8 @@
         margin-left: 40px;
     }
     .listalink a{
-        
-        font-weight: bold;
+        font-size: 0.9em;
+        font-weight: normal;
     }
     a{
         text-decoration: none;
