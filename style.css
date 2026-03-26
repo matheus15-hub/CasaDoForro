@@ -182,13 +182,12 @@
         background-size: cover;
     }
     .esquerda{
-        display: grid;
-        grid-template-columns: 60% 10%;
-        justify-content: center;
+        display: flex;
         align-items: center;
-        text-align: left;
-        padding: 1%;
+        gap: 50px;
+        padding: 30px 0;
         width: 70%;
+        margin: auto;
     }
     .direita{
         display: grid;
@@ -198,6 +197,15 @@
         text-align: right;
         padding: 1%;
         max-width: 90%;
+    }
+    .historia p{
+        line-height: 2em;
+        text-align: justify;
+        font-size: 1.1em;
+        padding: 10px;
+    }
+    .historia h1{
+        padding: 50px;
     }
     .imghis{
         width: 300px;
