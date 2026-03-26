@@ -191,41 +191,9 @@
         filter: drop-shadow(0 0 10px rgba(0,0,0,0.6));
     }
     
-    .topo{ 
-        color: #ffffff;
-        text-shadow: 1px 1px 5px rgb(0, 0, 0);
-        display: grid;
-        grid-template-rows: 1fr 7fr;
-        padding: 5%;
-        align-items: center;
-        background-image: url("img/Acordo.png");
-        background-size: cover;
-    }
-    .esquerda{
-        display: flex;
-        align-items: center;
-        gap: 50px;
-        padding: 30px 0;
-        width: 70%;
-        margin: auto;
-    }
-    .direita{
-        display: grid;
-        grid-template-columns:50% 40%;
-        justify-content: center;
-        align-items: center;
-        text-align: right;
-        padding: 1%;
-        max-width: 90%;
-    }
-    .historia p{
-        line-height: 2em;
-        text-align: justify;
-        font-size: 1.1em;
-        padding: 10px;
-    }
-    .historia h1{
-        padding: 50px;
+    .topo{
+        width: 100%;
+        height: 20%;
     }
     .imghis{
         width: 300px;
@@ -242,12 +210,10 @@
     .input-group {
         margin-bottom: 6%;
     }
-
     .input-group label {
         display: block;
         margin-bottom: 1%;
     }
-
     .input-group input {
         width: 100%;
         padding: 2%;
@@ -255,7 +221,6 @@
         border-radius: 5px;
         outline: none;
     }
-
     .input-group input:focus {
         border-color: var(--cor-principal);
     }
@@ -268,10 +233,11 @@
         font-weight: bold;
         transition: 0.5s;
     }
-
     .btn:hover {
         transform: scale(1.15);
     }
+
+
 
 
     @keyframes bordaColor{
