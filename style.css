@@ -195,8 +195,8 @@
         width: 70%;
         align-items: center;
         margin: 30px auto;
-        background-color: rgba(0,0,0,0.021);
-        box-shadow: 0 3px 8px rgba(0,0,0,0.355);
+        background-color: rgba(0, 0, 0, 0.021);
+        box-shadow: 0 3px 8px rgba(0, 0, 0, 0.355);
     }
     .empresas img{
         width: 60%;
@@ -277,6 +277,15 @@
     }
 }
 @media (max-width:750px) {
+    .empresas img{
+        display: none;
+    }
+    .empresas{
+        display: grid;
+        grid-template-columns: 1fr;
+        box-shadow: 0 3px 8px #fecc0483;
+        border: solid var(--cor-principal) 1px;
+    }
     .hamburger{
         display: block; 
         z-index: 1;
