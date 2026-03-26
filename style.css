@@ -1,3 +1,9 @@
+    @import url('https://fonts.googleapis.com/css2?family=Datatype:wght@100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Oswald:wght@200..700&display=swap');    
+
+   
+    @import url('https://fonts.googleapis.com/css2?family=Datatype:wght@100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Oswald:wght@200..700&display=swap');
+
+    
     *{
         margin: 0;
         padding: 0;
@@ -5,6 +11,10 @@
     }
     :root{
         --cor-principal: #FECB04;
+        --textoP--principal: 'Lato', sans-serif;
+        --titulo--h: 'Libre Baskerville', serif;
+
+
     }
     body{
         min-height: 100vh;
@@ -96,6 +106,16 @@
     h1{
         padding: 20px 0;
         text-align: center;
+        font-family: var(--titulo--h);
+    }
+    h2{
+        font-family: var(--titulo--h);
+    }
+    h3{
+        font-family: var(--titulo--h);
+    }
+    p{
+        font-family: var(--textoP--principal);
     }
     main{
         flex: 1;
